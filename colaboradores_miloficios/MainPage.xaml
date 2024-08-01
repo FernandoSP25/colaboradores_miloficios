@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="colaboradores_miloficios.MainPage"
+             Shell.NavBarIsVisible="False"
+             >
+    <Grid RowDefinitions=".6* , .4*" BackgroundColor="#3E11BC">
+        <Grid >
+            <Image
+                   Aspect="AspectFit"
+                Margin="25,25,25,25"
+                   HeightRequest="50"
+                   VerticalOptions="Center"
+                   HorizontalOptions="Center"
+                   Source="logo_1.png"/>
+        </Grid>
+        
+        <Grid Grid.Row="1">
+            <RoundRectangle Margin="-5,-30,-5,-2"
+                            CornerRadius="30,30,0,0"
+                            Fill="White"/>
+            <VerticalStackLayout Margin="30,0,30,0">
+                <Label FontAttributes="Bold"
+                       FontSize="Title"
+                       Text="¡Bienvenido!"
+                       TextColor="Black"/>
+                
+                <Label FontAttributes="Bold"
+                       FontSize="Subtitle"
+                       Text="Inicie sesion para comenzar"
+                       TextColor="Black"/>
+                
+                <Button
+                    Clicked="Button_Clicked"
+                    Background="#3E11BC"
+                    HeightRequest="60"
+                    Margin="10,20,10,0"
+                    Text="COLABORADORES"
+                    FontSize="20"
+                    TextColor="White"/>
+                <Button
+                    Clicked="Button_Clicked_1"
+                    Background="#3E11BC"
+                    HeightRequest="60"
+                    Margin="10,20,10,0"
+                    Text="INVITADOS"
+                    FontSize="20"
+                    TextColor="White"/>
+
+            </VerticalStackLayout>
+        </Grid>
+    </Grid>
+</ContentPage>
